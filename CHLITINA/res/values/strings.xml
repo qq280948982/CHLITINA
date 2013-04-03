@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CHLITINA</string>
+    
+    <!-- Index -->
+    <string name="index_number">编号：</string>
+    <string name="index_main_page">主页</string>
+    <string name="index_announcement">公告：</string>
+    <string name="index_settings">设置</string>
+    <string name="index_help">帮助</string>
+    
+    
+    <!-- Test data -->
+    <string name="test_index_number_value">654321</string>
+    <string name="test_index_announcement_value">2条</string>
+    <string name="test_index_subtitle_value">滚动字幕测试> > > 滚动字幕测试> > > 滚动字幕测试> > ></string>
+
+</resources>

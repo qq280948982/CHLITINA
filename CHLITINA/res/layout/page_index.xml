@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:IndexButton="http://schemas.android.com/apk/res/com.tim.chlitina"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <!-- Left -->
+    <LinearLayout 
+        android:id="@+id/page_index_left_menu_layout"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/page_index_bottom_status_bar_layout"
+        android:gravity="center_horizontal"
+        android:background="@drawable/index_left">
+        
+        <com.tim.chlitina.widget.IndexButton 
+            android:id="@+id/page_index_number"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp" 
+            android:layout_weight="1"
+            IndexButton:layout_width="@dimen/index_button_width"
+            IndexButton:layout_height="@dimen/index_button_height"
+            IndexButton:hasTitle="true"
+            IndexButton:titleText="@string/index_number"
+            IndexButton:contentText="@string/test_index_number_value"/>
+        
+        <com.tim.chlitina.widget.IndexButton 
+            android:id="@+id/page_index_main_page"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp" 
+            android:layout_weight="1"
+            IndexButton:layout_width="@dimen/index_button_width"
+            IndexButton:layout_height="@dimen/index_button_height"
+            IndexButton:hasTitle="false"
+            IndexButton:contentText="@string/index_main_page"/>
+        
+        <com.tim.chlitina.widget.IndexButton 
+            android:id="@+id/page_index_announcement"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp" 
+            android:layout_weight="1"
+            IndexButton:layout_width="@dimen/index_button_width"
+            IndexButton:layout_height="@dimen/index_button_height"
+            IndexButton:hasTitle="true"
+            IndexButton:titleText="@string/index_announcement"
+            IndexButton:contentText="@string/test_index_announcement_value"/>
+        
+        <com.tim.chlitina.widget.IndexButton 
+            android:id="@+id/page_index_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp" 
+            android:layout_weight="1"
+            IndexButton:layout_width="@dimen/index_button_width"
+            IndexButton:layout_height="@dimen/index_button_height"
+            IndexButton:hasTitle="false"
+            IndexButton:contentText="@string/index_settings"/>
+        
+        <com.tim.chlitina.widget.IndexButton 
+            android:id="@+id/page_index_help"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp" 
+            android:layout_weight="1"
+            IndexButton:layout_width="@dimen/index_button_width"
+            IndexButton:layout_height="@dimen/index_button_height"
+            IndexButton:hasTitle="false"
+            IndexButton:contentText="@string/index_help"/>
+        
+    </LinearLayout>
+    
+    <!-- Right -->
+    <FrameLayout 
+        android:id="@+id/page_index_right_advertisement_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@+id/page_index_left_menu_layout"
+        android:layout_above="@+id/page_index_bottom_status_bar_layout"
+       	android:background="@drawable/index_right">
+        
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/index_right_frame"/>
+        
+    </FrameLayout>
+    
+    <!-- Bottom -->
+	<RelativeLayout 
+	    android:id="@+id/page_index_bottom_status_bar_layout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:background="@drawable/index_bottom">
+	    
+	    <!--  
+	    <lib.tim.view.OhTextView 
+	        android:id="@+id/page_index_subtitle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/test_index_subtitle_value"
+	        android:layout_centerVertical="true"
+	        android:layout_toLeftOf="@+id/page_index_wifi_indicator"
+	        android:layout_marginRight="10dp"
+	        android:ellipsize="marquee" 
+	        android:marqueeRepeatLimit="marquee_forever" 
+	        android:focusableInTouchMode="true" 
+	        android:scrollHorizontally="true" />
+	      -->
+	    
+	    <com.tim.chlitina.widget.MarqueeText
+	        android:id="@+id/page_index_subtitle"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/test_index_subtitle_value"
+	        android:layout_centerVertical="true"
+	        android:layout_toLeftOf="@+id/page_index_wifi_indicator"
+	        android:layout_marginRight="10dp"/>
+	    
+	    <ImageView 
+	        android:id="@+id/page_index_wifi_indicator"
+	        android:layout_width="30dp"
+	        android:layout_height="30dp" 
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="30dp"/>
+	    
+	</RelativeLayout>
+</RelativeLayout>

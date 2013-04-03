@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <!-- Index -->
+    <dimen name="index_button_title_textSize">12dp</dimen>
+    <dimen name="index_button_content_textSize">18dp</dimen>
+    <dimen name="index_button_content_textSize_small">14dp</dimen>
+    <dimen name="index_button_content_marginTop_by_title">12dp</dimen>
+    <dimen name="index_button_new_icon_marginRight">14dp</dimen>
+    <dimen name="index_button_new_icon_marginTop">5dp</dimen>
+    <dimen name="index_button_width">90dp</dimen>    
+    <dimen name="index_button_height">91dp</dimen>    
+</resources>
